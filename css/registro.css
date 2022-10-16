@@ -1,0 +1,44 @@
+* {
+  font-family: Nunito; }
+
+.form-control-user {
+  font-size: 0.8rem;
+  border-radius: 10rem;
+  padding: 1.1rem 1rem; }
+
+.btn-primary {
+  background-color: #278FBF !important;
+  border: #278FBF; }
+
+input.mayusculas {
+  text-transform: uppercase; }
+
+input::-webkit-input-placeholder {
+  text-transform: none; }
+
+input:-moz-placeholder {
+  text-transform: none; }
+
+input:-ms-input-placeholder {
+  text-transform: none; }
+
+a {
+  color: #278FBF;
+  text-decoration: none;
+  background-color: transparent; }
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-width: 1px 0px 0px;
+  border-right-style: initial;
+  border-bottom-style: initial;
+  border-left-style: initial;
+  border-right-color: initial;
+  border-bottom-color: initial;
+  border-left-color: initial;
+  border-image: initial;
+  border-top-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.1); }
+
+/*# sourceMappingURL=registro.css.map */
