@@ -7,8 +7,8 @@
   padding: 1.1rem 1rem; }
 
 .btn-primary {
-  background-color: #278FBF !important;
-  border: #278FBF; }
+  background-color: #4F2D80 !important;
+  border: #4F2D80; }
 
 input.mayusculas {
   text-transform: uppercase; }
@@ -23,7 +23,7 @@ input:-ms-input-placeholder {
   text-transform: none; }
 
 a {
-  color: #278FBF;
+  color: #4F2D80;
   text-decoration: none;
   background-color: transparent; }
 

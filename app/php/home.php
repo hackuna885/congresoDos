@@ -32,7 +32,8 @@ require_once "seguridad.php";
     </style>
 </head>
 <body>
-    <div class="container-fluid" id="app" oncontextmenu='return false'>
+    <!-- <div class="container-fluid" id="app" oncontextmenu='return false'> -->
+    <div class="container-fluid" id="app">
         <router-view></router-view>              
     </div>
     

@@ -6,9 +6,22 @@
   border-radius: 10rem;
   padding: 1.1rem 1rem; }
 
+.form-control-user:hover {
+  border-color: #4F2D80; }
+
+.form-control-user:focus {
+  border-color: #502d80;
+  box-shadow: 0 0 0 0.2rem rgba(80, 45, 128, 0.5); }
+
+select.form-select.form-control-user {
+  color: gray; }
+
+option {
+  font-size: 1.3em; }
+
 .btn-primary {
-  background-color: #278FBF !important;
-  border: #278FBF; }
+  background-color: #4F2D80 !important;
+  border: #4F2D80; }
 
 input.mayusculas {
   text-transform: uppercase; }
@@ -23,7 +36,7 @@ input:-ms-input-placeholder {
   text-transform: none; }
 
 a {
-  color: #278FBF;
+  color: #4F2D80;
   text-decoration: none;
   background-color: transparent; }
 

@@ -6,7 +6,7 @@ app.component('web-inicio', {
             <div class="row justify-content-center align-items-center vh-100">
 
                 <div class="col-lg-6 mx-auto text-center">
-                    <img src="../img/register-image.png" class="mx-auto img-fluid d-none d-lg-block">
+                    <img src="../img/register-image.jpg" class="mx-auto img-fluid d-none d-lg-block">
                     <img src="../img/logoCongreso.png" class="mx-auto img-fluid d-block d-lg-none">
                 </div>
                 <div class="col-lg-6 mx-auto">
@@ -38,6 +38,13 @@ app.component('web-inicio', {
                               </div>
                             </div>
                             <div class="form-group">
+                              <select class="form-select form-control-user mb-3" v-model="modalidad" required>
+                                <option value="" disabled selected hidden>Modalidad*</option>
+                                <option value="PRESENCIAL">PRESENCIAL</option>
+                                <option value="VIRTUAL">VIRTUAL</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
                               <input type="email" class="form-control form-control-user mb-3" v-model="nCorreo" placeholder="Correo electrónico*" required />
                             </div>
                             <div class="form-group" v-html="datos"></div>
@@ -53,7 +60,7 @@ app.component('web-inicio', {
                             <div :class="notificaEstadoPass" role="alert">
                               {{validaContrasena}}
                             </div>
-                            <button class="btn btn-primary form-control form-control-user my-3" :disabled="this.nUsr != '' && this.aPat != '' && this.aMat != '' && this.rfc != '' && this.tel != '' && this.nInst !='' && this.nCorreo != '' && this.passUsr != '' && this.passUsrDos != '' && this.validaBtn === true ? this.estadoBtn = flase : this.estadoBtn = true">
+                            <button class="btn btn-primary form-control form-control-user my-3" :disabled="this.nUsr != '' && this.aPat != '' && this.aMat != '' && this.rfc != '' && this.tel != '' && this.nInst !='' && this.modalidad != '' && this.nCorreo != '' && this.passUsr != '' && this.passUsrDos != '' && this.validaBtn === true ? this.estadoBtn = flase : this.estadoBtn = true">
                               Registrar cuenta
                             </button>
           
@@ -81,6 +88,7 @@ app.component('web-inicio', {
             nInst: '',
             rfc: '',
             tel: '',
+            modalidad: '',
             nCorreo: '',
             passUsr: '',
             passUsrDos: '',            
@@ -151,6 +159,7 @@ app.component('web-inicio', {
                 nInst: this.nInst,
                 rfc: this.rfc,
                 tel: this.tel,
+                modalidad: this.modalidad,
                 nCorreo: this.nCorreo,
                 passUsr: this.passUsr,                
             })
